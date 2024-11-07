@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 20 09:28:59 2024
+# Process ID: 37124
+# Current directory: c:/work/2024/PO/lab01/lab01_flow
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3556 C:\work\2024\PO\lab01\lab01_flow\lab01.xpr
+# Log file: c:/work/2024/PO/lab01/lab01_flow/vivado.log
+# Journal file: c:/work/2024/PO/lab01/lab01_flow\vivado.jou
+#-----------------------------------------------------------
+start_gui
