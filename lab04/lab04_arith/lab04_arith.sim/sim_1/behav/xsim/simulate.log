@@ -1,1 +1,169 @@
 Time resolution is 1 ps
+Failure: 255/1 != lib: (255,0) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 30 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 30 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/2 != lib: (127,1) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 50 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 50 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/3 != lib: (85,0) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 70 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 70 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/4 != lib: (63,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 90 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 90 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/5 != lib: (51,0) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 110 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 110 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/6 != lib: (42,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 130 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 130 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/7 != lib: (36,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 150 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 150 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/8 != lib: (31,7) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 170 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 170 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/9 != lib: (28,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 190 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 190 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/10 != lib: (25,5) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 210 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 210 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/11 != lib: (23,2) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 230 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 230 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/12 != lib: (21,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 250 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 250 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/13 != lib: (19,8) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 270 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 270 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/14 != lib: (18,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 290 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 290 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/15 != lib: (17,0) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 310 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 310 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/16 != lib: (15,15) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 330 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 330 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/17 != lib: (15,0) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 350 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 350 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/18 != lib: (14,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 370 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 370 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/19 != lib: (13,8) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 390 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 390 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/20 != lib: (12,15) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 410 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 410 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/21 != lib: (12,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 430 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 430 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/22 != lib: (11,13) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 450 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 450 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/23 != lib: (11,2) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 470 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 470 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/24 != lib: (10,15) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 490 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 490 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/25 != lib: (10,5) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 510 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 510 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/26 != lib: (9,21) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 530 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 530 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/27 != lib: (9,12) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 550 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 550 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/28 != lib: (9,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 570 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 570 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/29 != lib: (8,23) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 590 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 590 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/30 != lib: (8,15) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 610 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 610 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/31 != lib: (8,7) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 630 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 630 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/32 != lib: (7,31) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 650 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 650 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/33 != lib: (7,24) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 670 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 670 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/34 != lib: (7,17) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 690 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 690 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/35 != lib: (7,10) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 710 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 710 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/36 != lib: (7,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 730 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 730 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/37 != lib: (6,33) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 750 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 750 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/38 != lib: (6,27) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 770 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 770 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/39 != lib: (6,21) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 790 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 790 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/40 != lib: (6,15) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 810 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 810 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/41 != lib: (6,9) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 830 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 830 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/42 != lib: (6,3) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 850 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 850 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/43 != lib: (5,40) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 870 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 870 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/44 != lib: (5,35) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 890 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 890 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/45 != lib: (5,30) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 910 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 910 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/46 != lib: (5,25) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 930 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 930 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/47 != lib: (5,20) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 950 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 950 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/48 != lib: (5,15) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 970 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 970 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/49 != lib: (5,10) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 990 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 990 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/50 != lib: (5,5) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1010 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1010 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/51 != lib: (5,0) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1030 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1030 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/52 != lib: (4,47) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1050 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1050 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/53 != lib: (4,43) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1070 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1070 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/54 != lib: (4,39) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1090 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1090 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/55 != lib: (4,35) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1110 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1110 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
+Failure: 255/56 != lib: (4,31) != restoring: (0,0) != nonrestoring: (NaN,NaN)
+Time: 1130 ns  Iteration: 0  Process: /divider_tb/tb  File: C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd
+$finish called at time : 1130 ns : File "C:/Users/baron/OneDrive/skola/data/5_semestr/PO/lab04/lab04_arith/lab04_arith.srcs/sim_1/new/divider_tb.vhd" Line 164
