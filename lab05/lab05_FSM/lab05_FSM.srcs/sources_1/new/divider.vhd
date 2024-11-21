@@ -45,19 +45,25 @@ begin
             elsif run then
                 case state is
                     when start =>
-                        state <= count;
-                        busy <= '1';
-                        done <= '0';
-                        R_out <= resize(nom, R'length);
-                        D_out <= ('0', den, others => '0');
+                        if nom = 0 then
+                            err <= '1';
+                        else
+                            Q_out <= (others => '0');
+                            R_out <= resize(nom, R'length);
+                            D_out <= ('0', den, others => '0');
+                            index <= 0;
+                            state <= count;
+                            busy <= '1';
+                            done <= '0';
+                        end if;
                     when count =>
                         R := shift_left(R_out,1) - D_out;
                         if signed(R) >= 0 then
-                            Q_out(Q_out'high - index) <= '1';
+                            Q_out <= shift_left(Q_out, 1) + 1;
                             R_out <= R;
                         else
                             R_out <= R + D_out;
-                            Q_out(Q_out'high-index) <= '0';
+                            Q_out <= shift_left(Q_out, 1);
                         end if;
                         index <= index + 1;
                         if index >= C_WIDTH-1 then
@@ -68,6 +74,7 @@ begin
                         busy <= '0';
                         remainder <= R_out(R_out'high - 1 downto C_WIDTH);
                         quotient <= Q_out;
+                        state <= start;
                 end case;
             end if;
         end if;
