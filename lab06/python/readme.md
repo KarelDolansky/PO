@@ -1,0 +1,1 @@
+music is 11025Hz, mono, 8bit unsigned

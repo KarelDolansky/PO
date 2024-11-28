@@ -1,0 +1,7 @@
+Running: xsim.dir/fsm_buttons_tb_behav/xsimk.exe -simmode gui -wdb fsm_buttons_tb_behav.wdb -simrunnum 0 -socket 17011
+Design successfully loaded
+Design Loading Memory Usage: 7360 KB (Peak: 7360 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 15832 KB (Peak: 15832 KB)
+Simulation CPU Usage: 343 ms

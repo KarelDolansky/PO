@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>project</name>
+	<name>lab05</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -23,34 +23,9 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>lab02</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/lab02</locationURI>
-		</link>
-		<link>
-			<name>lab02_regs.srcs</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/lab02/lab02_regs/lab02_regs.srcs</locationURI>
-		</link>
-		<link>
-			<name>lab03.srcs</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/lab03/lab03/lab03.srcs</locationURI>
-		</link>
-		<link>
-			<name>lab04_arith.srcs</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/lab04/lab04_arith/lab04_arith.srcs</locationURI>
-		</link>
-		<link>
 			<name>lab05_FSM.srcs</name>
 			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/lab05/lab05_FSM/lab05_FSM.srcs</locationURI>
-		</link>
-		<link>
-			<name>lab06</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/lab06</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/lab05_FSM/lab05_FSM.srcs</locationURI>
 		</link>
 		<link>
 			<name>Common Libraries/IEEE</name>
