@@ -53,6 +53,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/lab06</locationURI>
 		</link>
 		<link>
+			<name>lab07_video.srcs</name>
+			<type>2</type>
+			<locationURI>PARENT-1-PROJECT_LOC/lab07/lab07_video/lab07_video.srcs</locationURI>
+		</link>
+		<link>
 			<name>Common Libraries/IEEE</name>
 			<type>2</type>
 			<locationURI>sigasiresource:/vhdl/2008/IEEE</locationURI>

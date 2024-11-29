@@ -1,0 +1,446 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1393.707 ; gain = 159.457
+Command: read_checkpoint -auto_incremental -incremental C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23024
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2245.586 ; gain = 410.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:23]
+INFO: [Synth 8-3491] module 'clock_generator' declared at 'C:/work/2024/PO/lab07/lab07_video/lab07_video.runs/synth_1/.Xil/Vivado-26008-NORMANDI/realtime/clock_generator_stub.vhdl:6' bound to instance 'clock_generator_inst' of component 'clock_generator' [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'clock_generator' [C:/work/2024/PO/lab07/lab07_video/lab07_video.runs/synth_1/.Xil/Vivado-26008-NORMANDI/realtime/clock_generator_stub.vhdl:16]
+INFO: [Synth 8-638] synthesizing module 'video_generator' [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd:23]
+	Parameter C_TIMING bound to: 290'b00000000000000000000010000000000000000000000000000000000000110000000000000000000000000001000100000000000000000000000000010100000100000000000000000000001100000000000000000000000000000000000000110000000000000000000000000000011000000000000000000000000000011101100000011110111111101001001000000 
+INFO: [Synth 8-256] done synthesizing module 'video_generator' (0#1) [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'xmp_rom_wrapper' [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/xpm_rom_wrapper.vhd:23]
+	Parameter C_ADDRESS_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter C_MEM_FILE bound to: c:\work\2024\PO\lab07\python\image.mem - type: string 
+	Parameter MEMORY_SIZE bound to: 786432 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter ECC_TYPE bound to: none - type: string 
+	Parameter ECC_BIT_RANGE bound to: 7:0 - type: string 
+	Parameter MEMORY_INIT_FILE bound to: c:\work\2024\PO\lab07\python\image.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter RAM_DECOMP bound to: auto - type: string 
+	Parameter READ_DATA_WIDTH_A bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 16 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+INFO: [Synth 8-3491] module 'xpm_memory_sprom' declared at 'D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8891' bound to instance 'xpm_memory_sprom_inst' of component 'xpm_memory_sprom' [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/xpm_rom_wrapper.vhd:233]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sprom' [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8891]
+	Parameter MEMORY_SIZE bound to: 786432 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter ECC_TYPE bound to: none - type: string 
+	Parameter ECC_BIT_RANGE bound to: 7:0 - type: string 
+	Parameter MEMORY_INIT_FILE bound to: c:\work\2024\PO\lab07\python\image.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter RAM_DECOMP bound to: auto - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 16 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:508]
+INFO: [Synth 8-3876] $readmem data file 'c:\work\2024\PO\lab07\python\image.mem' is read successfully [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1195]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sprom' (0#1) [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8891]
+INFO: [Synth 8-256] done synthesizing module 'xmp_rom_wrapper' (0#1) [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/xpm_rom_wrapper.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_a.gen_douta_pipe.ena_pipe_reg[0] was removed.  [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2381]
+WARNING: [Synth 8-3848] Net LED in module/entity top does not have driver. [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:13]
+WARNING: [Synth 8-3848] Net segments in module/entity top does not have driver. [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:14]
+WARNING: [Synth 8-3848] Net displays in module/entity top does not have driver. [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:15]
+WARNING: [Synth 8-3848] Net LED_RGB in module/entity top does not have driver. [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd:16]
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wea[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[9] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[8] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[7] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[6] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[5] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[4] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[3] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[2] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[1] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rstb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[15] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[14] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[13] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[12] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[9] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[8] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[7] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[6] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[5] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[4] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[3] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[2] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[1] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segments[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displays[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED_RGB[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED_RGB[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED_RGB[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED_RGB[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED_RGB[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED_RGB[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnc in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnu in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnl in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnr in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnd in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2395.727 ; gain = 560.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2413.652 ; gain = 578.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2413.652 ; gain = 578.746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2413.652 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/work/2024/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator/clock_generator_in_context.xdc] for cell 'clock_generator_inst'
+Finished Parsing XDC File [c:/work/2024/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator/clock_generator_in_context.xdc] for cell 'clock_generator_inst'
+Parsing XDC File [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2528.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2528.098 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/work/2024/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator/clock_generator_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/work/2024/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator/clock_generator_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clock_generator_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	  11 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port wea[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dina[9] in module xpm_memory_base is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+-------------------------------------------------------------------+---------------+----------------+
+|Module Name     | RTL Object                                                        | Depth x Width | Implemented As | 
++----------------+-------------------------------------------------------------------+---------------+----------------+
+|xpm_memory_base | gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_pipe.douta_reg_reg | 65536x12      | Block RAM      | 
++----------------+-------------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2528.098 ; gain = 693.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.473 ; gain = 698.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.473 ; gain = 698.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.473 ; gain = 698.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.473 ; gain = 698.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.477 ; gain = 698.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.477 ; gain = 698.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | color_gen.ROM_HS_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | color_gen.ROM_VS_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |clock_generator |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |clock_generator_bbox |     1|
+|2     |LUT1                 |     4|
+|3     |LUT2                 |     7|
+|4     |LUT3                 |    13|
+|5     |LUT4                 |    11|
+|6     |LUT5                 |    11|
+|7     |LUT6                 |    27|
+|8     |RAMB36E1             |    24|
+|32    |SRL16E               |     2|
+|33    |FDRE                 |    72|
+|34    |IBUF                 |    15|
+|35    |OBUF                 |    14|
+|36    |OBUFT                |    38|
++------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.477 ; gain = 698.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2533.477 ; gain = 584.125
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2533.477 ; gain = 698.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2545.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7c49c461
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 2549.188 ; gain = 1111.961
+INFO: [Common 17-1381] The checkpoint 'C:/work/2024/PO/lab07/lab07_video/lab07_video.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 09:02:32 2024...

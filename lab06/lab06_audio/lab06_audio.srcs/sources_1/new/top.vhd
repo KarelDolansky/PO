@@ -42,7 +42,7 @@ architecture Behavioral of top is
         -- y = sin(t) is in range <-1, 1>. Modify output to range <0, 2**C_SAMPLE_WIDTH - 1>
         -- t is in range <0, 2Pi> => <0, 1023>
         for i in 0 to 1023 loop
-            retval(i) := to_unsigned(integer((sin(i * 2.0 * MATH_PI / 1024.0) + 1.0) * 255.0/2), C_SAMPLE_WIDTH);
+            retval(i) := to_unsigned(integer((sin(i * 2.0 * MATH_PI / 1024.0) + 1.0) * 255.0/2.0), C_SAMPLE_WIDTH);
         end loop;
         
             
@@ -50,7 +50,7 @@ architecture Behavioral of top is
     end function;
     
     signal ROM_sin : ROM_t := fill_ROM_sin;
-    signal ROM_cnt : integer := 0;
+    signal ROM_cnt : unsigned(9 downto 0);
 
 begin
     
@@ -61,7 +61,7 @@ begin
         port map(
             clk       => clk,
             rst       => not rstn,
-            pwm_value => ROM_sin(ROM_cnt),
+            pwm_value => ROM_sin(to_integer(ROM_cnt)),
             pwm       => pwm
         );
     
@@ -73,7 +73,7 @@ begin
             if rising_edge(clk) then
                 if not rstn then
                     counter := (others => '0');
-                    ROM_cnt <= 0;
+                    ROM_cnt <= (others => '0');
                 else
                     if counter <222 then
                         counter := counter+1;
