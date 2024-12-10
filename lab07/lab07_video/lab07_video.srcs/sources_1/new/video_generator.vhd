@@ -48,6 +48,7 @@ begin
                 pos_y <= c_vertical;
                 hsync <= not C_TIMING.C_H_POLARITY;
                 vsync <= not C_TIMING.C_V_POLARITY;
+                frame_end <= '0';
 
 
                 if c_horizontal = C_TIMING.C_H_ACTIVE and c_vertical = C_TIMING.C_V_ACTIVE then

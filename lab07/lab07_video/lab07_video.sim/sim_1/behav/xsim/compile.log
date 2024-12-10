@@ -1,5 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_generator_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_package.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'video_generator'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/timing_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'timing_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'

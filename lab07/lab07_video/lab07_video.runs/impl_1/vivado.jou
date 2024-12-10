@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Nov 24 09:02:40 2024
-# Process ID: 30676
-# Current directory: C:/work/2024/PO/lab07/lab07_video/lab07_video.runs/impl_1
+# Start of session at: Thu Dec  5 15:23:32 2024
+# Process ID: 21368
+# Current directory: C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/work/2024/PO/lab07/lab07_video/lab07_video.runs/impl_1/top.vdi
-# Journal file: C:/work/2024/PO/lab07/lab07_video/lab07_video.runs/impl_1\vivado.jou
-# Running On: NORMANDI, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 32, Host memory: 68624 MB
+# Log file: C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.runs/impl_1/top.vdi
+# Journal file: C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.runs/impl_1\vivado.jou
+# Running On: nb555, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16905 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

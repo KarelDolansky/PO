@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/work/2024/PO/lab07/lab07_video/lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc rfile:../../../lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc rfile:../../../lab07_video.srcs/constrs_1/imports/PO/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

@@ -2,7 +2,10 @@
 2020.2
 May  7 2023
 15:24:31
+C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator.v,1732802523,verilog,,,,clock_generator,,,../../../../lab07_video.ip_user_files/ipstatic,,,,,
+C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator_clk_wiz.v,1732802523,verilog,,C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.gen/sources_1/ip/clock_generator/clock_generator.v,,clock_generator_clk_wiz,,,../../../../lab07_video.ip_user_files/ipstatic,,,,,
 C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
-C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/timing_tb.vhd,1732802272,vhdl2008,,,,timing_tb,,,,,,,,
-C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd,1732806009,vhdl2008,C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/timing_tb.vhd,,,video_generator,,,,,,,,
-C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_package.vhd,1732802272,vhdl2008,C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/timing_tb.vhd;C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd,,,video_package,,,,,,,,
+C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/top_tb.vhd,1733405412,vhdl,,,,top_tb,,,,,,,,
+C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd,1733401469,vhdl2008,C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/top_tb.vhd,,,top,,,,,,,,
+C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd,1733400056,vhdl2008,C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd,,,video_generator,,,,,,,,
+C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_package.vhd,1732802272,vhdl2008,C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/top_tb.vhd;C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd;C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd,,,video_package,,,,,,,,

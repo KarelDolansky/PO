@@ -1,5 +1,7 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_package.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/video_generator.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'video_generator'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/timing_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'timing_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/baron/skola/data/5_semestr/PO/lab07/lab07_video/lab07_video.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'

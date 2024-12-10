@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab07_video.ip_user_files/ipstatic" \
+"../../../../lab07_video.gen/sources_1/ip/clock_generator/clock_generator_clk_wiz.v" \
+"../../../../lab07_video.gen/sources_1/ip/clock_generator/clock_generator.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
