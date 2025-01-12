@@ -427,14 +427,14 @@ begin
                         br.X := ball_pos.X + S_BALL.WIDTH - 1;
                         pl.X := player_pos.X;
                         pr.X := player_pos.X + S_PLAYER.WIDTH - 1;
-                        bl.Y := ball_pos.Y;
-                        br.Y := ball_pos.Y + S_BALL.HEIGHT - 1;
-                        pl.Y := player_pos.Y;
-                        pr.Y := player_pos.Y + S_PLAYER.HEIGHT - 1;
+                        bl.Y := ball_pos.Y + S_BALL.HEIGHT - 1;
+                        br.Y := ball_pos.Y;
+                        pl.Y := player_pos.Y + S_PLAYER.HEIGHT - 1;
+                        pr.Y := player_pos.Y;
                         if (bl.X <= pr.X) and (br.X >= pl.X) and (bl.Y >= pr.Y) and (br.Y <= pl.Y) then
-                            if (bl.X <= pr.X) and (br.X >= pl.X) then
-                                ball_speed.X <= -ball_speed.X;
-                            end if;
+                            -- if (bl.X <= pr.X) and (br.X >= pl.X) then
+                            --     ball_speed.X <= -ball_speed.X;
+                            -- end if;
                             if (bl.Y >= pr.Y) and (br.Y <= pl.Y) then
                                 ball_speed.Y <= -ball_speed.Y;
                             end if;
@@ -492,10 +492,7 @@ begin
                             -- if player wins do some terrible blinking
                             bckg_sel <= std_logic_vector(unsigned(bckg_sel) + 1);
                         end if;
-                        if lose then
-                            -- if sprites win do some terrible blinking
-                            --bckg_sel      <= std_logic_vector(unsigned(bckg_sel) + 1);
-                            -- hide player 
+                        if lose then 
                             player_active <= '0';
                             ball_active  <=  '0';
                         end if;

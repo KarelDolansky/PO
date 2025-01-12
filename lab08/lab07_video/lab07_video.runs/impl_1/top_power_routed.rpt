@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Sun Jan 12 15:24:51 2025
+| Date             : Sun Jan 12 22:16:37 2025
 | Host             : nb555 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.018 |        5 |       --- |             --- |
-| Slice Logic    |     0.005 |     8176 |       --- |             --- |
-|   LUT as Logic |     0.004 |     3494 |     63400 |            5.51 |
+| Slice Logic    |     0.005 |     8166 |       --- |             --- |
+|   LUT as Logic |     0.004 |     3490 |     63400 |            5.50 |
 |   CARRY4       |     0.001 |      895 |     15850 |            5.65 |
-|   Register     |    <0.001 |     2745 |    126800 |            2.16 |
+|   Register     |    <0.001 |     2743 |    126800 |            2.16 |
 |   F7/F8 Muxes  |    <0.001 |       34 |     63400 |            0.05 |
 |   Others       |     0.000 |      323 |       --- |             --- |
-| Signals        |     0.013 |     5580 |       --- |             --- |
+| Signals        |     0.014 |     5572 |       --- |             --- |
 | Block RAM      |     0.161 |      135 |       135 |          100.00 |
 | MMCM           |     0.122 |        1 |         6 |           16.67 |
 | I/O            |     0.017 |       70 |       210 |           33.33 |
@@ -163,16 +163,16 @@ Table of Contents
 |   sprites[12].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[13].sprite_inst   |     0.003 |
+|   sprites[13].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[14].sprite_inst   |     0.004 |
+|   sprites[14].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[15].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[16].sprite_inst   |     0.003 |
+|   sprites[16].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[17].sprite_inst   |     0.003 |
@@ -208,7 +208,7 @@ Table of Contents
 |   sprites[26].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[27].sprite_inst   |     0.004 |
+|   sprites[27].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[28].sprite_inst   |     0.003 |
@@ -217,10 +217,10 @@ Table of Contents
 |   sprites[29].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[2].sprite_inst    |     0.004 |
+|   sprites[2].sprite_inst    |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[30].sprite_inst   |     0.003 |
+|   sprites[30].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[31].sprite_inst   |     0.003 |
@@ -232,7 +232,7 @@ Table of Contents
 |   sprites[33].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[34].sprite_inst   |     0.003 |
+|   sprites[34].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[35].sprite_inst   |     0.003 |
@@ -244,7 +244,7 @@ Table of Contents
 |   sprites[37].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[3].sprite_inst    |     0.003 |
+|   sprites[3].sprite_inst    |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[48].sprite_inst   |     0.003 |
@@ -253,7 +253,7 @@ Table of Contents
 |   sprites[49].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[4].sprite_inst    |     0.003 |
+|   sprites[4].sprite_inst    |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[50].sprite_inst   |     0.003 |
@@ -271,13 +271,13 @@ Table of Contents
 |   sprites[54].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[55].sprite_inst   |     0.004 |
+|   sprites[55].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[56].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[57].sprite_inst   |     0.004 |
+|   sprites[57].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[58].sprite_inst   |     0.003 |
@@ -289,7 +289,7 @@ Table of Contents
 |   sprites[5].sprite_inst    |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[60].sprite_inst   |     0.003 |
+|   sprites[60].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[61].sprite_inst   |     0.003 |
