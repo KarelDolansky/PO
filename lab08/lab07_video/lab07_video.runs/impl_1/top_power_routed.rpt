@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Tue Jan  7 17:16:26 2025
+| Date             : Sun Jan 12 15:24:51 2025
 | Host             : nb555 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.441        |
+| Total On-Chip Power (W)  | 0.442        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.336        |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.018 |        5 |       --- |             --- |
-| Slice Logic    |     0.005 |     8175 |       --- |             --- |
-|   LUT as Logic |     0.004 |     3492 |     63400 |            5.51 |
-|   CARRY4       |     0.001 |      893 |     15850 |            5.63 |
+| Slice Logic    |     0.005 |     8176 |       --- |             --- |
+|   LUT as Logic |     0.004 |     3494 |     63400 |            5.51 |
+|   CARRY4       |     0.001 |      895 |     15850 |            5.65 |
 |   Register     |    <0.001 |     2745 |    126800 |            2.16 |
 |   F7/F8 Muxes  |    <0.001 |       34 |     63400 |            0.05 |
 |   Others       |     0.000 |      323 |       --- |             --- |
-| Signals        |     0.014 |     5575 |       --- |             --- |
+| Signals        |     0.013 |     5580 |       --- |             --- |
 | Block RAM      |     0.161 |      135 |       135 |          100.00 |
 | MMCM           |     0.122 |        1 |         6 |           16.67 |
-| I/O            |     0.016 |       70 |       210 |           33.33 |
+| I/O            |     0.017 |       70 |       210 |           33.33 |
 | Static Power   |     0.105 |          |           |                 |
-| Total          |     0.441 |          |           |                 |
+| Total          |     0.442 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.204 |       0.184 |      0.020 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.086 |       0.068 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -151,13 +151,13 @@ Table of Contents
 |       xpm_memory_sprom_inst |     0.001 |
 |   clock_generator_inst      |     0.122 |
 |     inst                    |     0.122 |
-|   sprites[0].sprite_inst    |     0.004 |
+|   sprites[0].sprite_inst    |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[10].sprite_inst   |     0.004 |
+|   sprites[10].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[11].sprite_inst   |     0.004 |
+|   sprites[11].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[12].sprite_inst   |     0.003 |
@@ -166,7 +166,7 @@ Table of Contents
 |   sprites[13].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[14].sprite_inst   |     0.003 |
+|   sprites[14].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[15].sprite_inst   |     0.003 |
@@ -208,7 +208,7 @@ Table of Contents
 |   sprites[26].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[27].sprite_inst   |     0.003 |
+|   sprites[27].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[28].sprite_inst   |     0.003 |
@@ -217,7 +217,7 @@ Table of Contents
 |   sprites[29].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[2].sprite_inst    |     0.003 |
+|   sprites[2].sprite_inst    |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[30].sprite_inst   |     0.003 |
@@ -235,7 +235,7 @@ Table of Contents
 |   sprites[34].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[35].sprite_inst   |     0.004 |
+|   sprites[35].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[36].sprite_inst   |     0.003 |
@@ -247,7 +247,7 @@ Table of Contents
 |   sprites[3].sprite_inst    |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[48].sprite_inst   |     0.004 |
+|   sprites[48].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[49].sprite_inst   |     0.003 |
@@ -271,13 +271,13 @@ Table of Contents
 |   sprites[54].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[55].sprite_inst   |     0.003 |
+|   sprites[55].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[56].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[57].sprite_inst   |     0.003 |
+|   sprites[57].sprite_inst   |     0.004 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[58].sprite_inst   |     0.003 |
@@ -298,7 +298,7 @@ Table of Contents
 |   sprites[62].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[63].sprite_inst   |     0.004 |
+|   sprites[63].sprite_inst   |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   sprites[6].sprite_inst    |     0.003 |
@@ -310,7 +310,7 @@ Table of Contents
 |   sprites[8].sprite_inst    |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
-|   sprites[9].sprite_inst    |     0.004 |
+|   sprites[9].sprite_inst    |     0.003 |
 |     xmp_rom_wrapper_inst    |     0.003 |
 |       xpm_memory_sprom_inst |     0.003 |
 |   video_generator_inst      |     0.005 |

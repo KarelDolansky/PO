@@ -373,53 +373,16 @@ begin
                                 state <= SBallBounce;
                             end if;
                         end if;
-                    -- when SSpriteBouncing =>
-                    --     -- sprite wall bouncing
-                    --     sidx              := to_integer(sprite_counter);
-                    --     sprite_next_pos.X := signed(resize(sprite_positions(sidx).X, sprite_next_pos.X'length)) + sprite_speeds(sidx).X;
-                    --     sprite_next_pos.Y := signed(resize(sprite_positions(sidx).Y, sprite_next_pos.Y'length)) + sprite_speeds(sidx).Y;
-                    --     -- left and right wall hit changes X speed direction
-                    --     if (sprite_next_pos.X < 0) or (sprite_next_pos.X + S_BULLET.WIDTH >= C_TIMING.H_ACTIVE) then
-                    --         sprite_speeds(sidx).X <= -sprite_speeds(sidx).X;
-                    --     end if;
-                    --     -- top and bottom wall hit changes Y speed direction
-                    --     if (sprite_next_pos.Y < 0) or (sprite_next_pos.Y + S_BULLET.HEIGHT >= C_TIMING.V_ACTIVE) then
-                    --         sprite_speeds(sidx).Y <= -sprite_speeds(sidx).Y;
-                    --     end if;
-                    --     -- next bullet
-                    --     sprite_counter    := sprite_counter + 1;
-                    --     if sprite_counter >= C_NUM_SPRITES then
-                    --         -- compute next bullet position
-                    --         state          <= SSpritePositions;
-                    --         sprite_counter := (others => '0');
-                    --     end if;
-                    -- when SSpritePositions =>
-                    --     -- sprite movement. Adds speed to current postion
-                    --     sidx                     := to_integer(sprite_counter);
-                    --     sprite_positions(sidx).X <= unsigned(signed(sprite_positions(sidx).X) + sprite_speeds(sidx).X);
-                    --     sprite_positions(sidx).Y <= unsigned(signed(sprite_positions(sidx).Y) + sprite_speeds(sidx).Y);
-                    --     -- loop trough all sprites
-                    --     sprite_counter           := sprite_counter + 1;
-                    --     if sprite_counter >= C_NUM_SPRITES then
-                    --         if timeout_done then
-                    --             -- do not compute collisions when timeout done
-                    --             state <= SGameState;
-                    --         else
-                    --             state <= SBallBounce;
-                    --         end if;
-                    --         sprite_counter := (others => '0');
-                    --     end if;
-                    when SBallBounce =>
+                    when SBallBounce => -- ball wall bouncing
                         ball_next_pos.X := signed(resize(ball_pos.X, ball_next_pos.X'length)) + ball_speed.X;
                         ball_next_pos.Y := signed(resize(ball_pos.Y, ball_next_pos.Y'length)) + ball_speed.Y;                        
                         -- left and right wall hit changes X speed direction
-                        if (ball_next_pos.X < 0) or (ball_next_pos.X + S_BULLET.WIDTH >= C_TIMING.H_ACTIVE) then
+                        if (ball_next_pos.X < 0) or (ball_next_pos.X + S_BALL.WIDTH >= C_TIMING.H_ACTIVE) then
                             ball_speed.X <= -ball_speed.X;
                         end if;
-                        -- top and bottom wall hit changes Y speed direction
                         if (ball_next_pos.Y < 0)  then
                             ball_speed.Y <= -ball_speed.Y;
-                        elsif (ball_next_pos.Y + S_BULLET.HEIGHT >= C_TIMING.V_ACTIVE) then
+                        elsif (ball_next_pos.Y + S_BALL.HEIGHT >= C_TIMING.V_ACTIVE) then
                             lose := '1';
                         end if;
 
@@ -427,8 +390,56 @@ begin
                             -- do not compute collisions when timeout done
                             state <= SGameState;
                         else
-                            state<= SBallPosition;
+                            state<= SPlayerColision;
                         end if;
+                    when SPlayerColision => -- ball sprite collision
+                        sidx := to_integer(sprite_counter);
+                        bl.X := ball_pos.X;
+                        br.X := ball_pos.X + S_BALL.WIDTH - 1;
+                        sl.X := sprite_positions(sidx).X;
+                        sr.X := sprite_positions(sidx).X + S_BULLET.WIDTH - 1;
+                        bl.Y := ball_pos.Y + S_BALL.HEIGHT - 1;
+                        br.Y := ball_pos.Y;
+                        sl.Y := sprite_positions(sidx).Y + S_BULLET.HEIGHT - 1;
+                        sr.Y := sprite_positions(sidx).Y;
+                        if sprite_active(sidx) then
+                            if (bl.X <= sr.x) and (br.X >= sl.X) and (bl.Y >= sr.Y) and (br.Y <= sl.Y) then
+                                if (bl.X <= sr.x) and (br.X >= sl.X) then
+                                    ball_speed.X <= -ball_speed.X;
+                                end if;
+                                if (bl.Y >= sr.Y) and (br.Y <= sl.Y) then
+                                    ball_speed.Y <= -ball_speed.Y;
+                                end if;
+                                sprite_active(sidx) <= '0';
+                                win_counter         <= win_counter + 1;
+                                play_hit            <= '1';
+                            end if;
+                        end if;
+                        sprite_counter := sprite_counter + 1;
+                        -- loop trough all sprites
+                        if sprite_counter >= C_NUM_SPRITES then
+                            sprite_counter := (others => '0');
+                            state          <= BPlayerColision;
+                        end if;
+                    when BPlayerColision  => -- ball player collision
+
+                        bl.X := ball_pos.X;
+                        br.X := ball_pos.X + S_BALL.WIDTH - 1;
+                        pl.X := player_pos.X;
+                        pr.X := player_pos.X + S_PLAYER.WIDTH - 1;
+                        bl.Y := ball_pos.Y;
+                        br.Y := ball_pos.Y + S_BALL.HEIGHT - 1;
+                        pl.Y := player_pos.Y;
+                        pr.Y := player_pos.Y + S_PLAYER.HEIGHT - 1;
+                        if (bl.X <= pr.X) and (br.X >= pl.X) and (bl.Y >= pr.Y) and (br.Y <= pl.Y) then
+                            if (bl.X <= pr.X) and (br.X >= pl.X) then
+                                ball_speed.X <= -ball_speed.X;
+                            end if;
+                            if (bl.Y >= pr.Y) and (br.Y <= pl.Y) then
+                                ball_speed.Y <= -ball_speed.Y;
+                            end if;
+                        end if;
+                        state          <= SBallPosition;
                         
                     when SBallPosition =>
                         -- sprite movement. Adds speed to current postion
@@ -472,65 +483,10 @@ begin
                         -- player position update
                         player_pos.X   <= unsigned(signed(player_pos.X) + player_speed.X);
                         player_pos.Y   <= unsigned(signed(player_pos.Y) + player_speed.Y);
-                        state          <= SPlayerColision;
-                        sprite_counter := (others => '0');
-                    when SPlayerColision =>
-                        -- colision between player and sprites. pl == player left top corner, sr = sprite right bottom corner
-                        sidx := to_integer(sprite_counter);
-                        bl.X := ball_pos.X;
-                        br.X := ball_pos.X + S_BALL.WIDTH - 1;
-                        -- pl.X := player_pos.X;
-                        -- pr.X := player_pos.X + S_PLAYER.WIDTH - 1;
-                        sl.X := sprite_positions(sidx).X;
-                        sr.X := sprite_positions(sidx).X + S_BULLET.WIDTH - 1;
-                        bl.Y := ball_pos.Y + S_BALL.HEIGHT - 1;
-                        br.Y := ball_pos.Y;
-                        -- pl.Y := player_pos.Y + S_PLAYER.HEIGHT - 1;
-                        -- pr.Y := player_pos.Y;
-                        sl.Y := sprite_positions(sidx).Y + S_BULLET.HEIGHT - 1;
-                        sr.Y := sprite_positions(sidx).Y;
-                        if sprite_active(sidx) then
-                            -- only sprites not hit before are counted
-                            -- rectangle intersection
-                            if (bl.X <= sr.x) and (br.X >= sl.X) and (bl.Y >= sr.Y) and (br.Y <= sl.Y) then
-                                if (bl.X <= sr.x) and (br.X >= sl.X) then
-                                    ball_speed.X <= -ball_speed.X;
-                                end if;
-                                if (bl.Y >= sr.Y) and (br.Y <= sl.Y) then
-                                    ball_speed.Y <= -ball_speed.Y;
-                                end if;
-                                -- turn of sprite visibility (and intersection in next cycle)
-                                sprite_active(sidx) <= '0';
-                                -- update win counter
-                                win_counter         <= win_counter + 1;
-                                play_hit            <= '1';
-                            end if;
-                        end if;
-                        sprite_counter := sprite_counter + 1;
-                        -- loop trough all sprites
-                        if sprite_counter >= C_NUM_SPRITES then
-                            sprite_counter := (others => '0');
-                            state          <= BPlayerColision;
-                        end if;
-                    when BPlayerColision  => 
-
-                        bl.X := ball_pos.X;
-                        br.X := ball_pos.X + S_BALL.WIDTH - 1;
-                        pl.X := player_pos.X;
-                        pr.X := player_pos.X + S_PLAYER.WIDTH - 1;
-                        bl.Y := ball_pos.Y + S_BALL.HEIGHT - 1;
-                        br.Y := ball_pos.Y;
-                        pl.Y := player_pos.Y + S_PLAYER.HEIGHT - 1;
-                        pr.Y := player_pos.Y;
-                        if (bl.X <= pr.X) and (br.X >= pl.X) and (bl.Y >= pr.Y) and (br.Y <= pl.Y) then
-                            if (bl.X <= pr.X) and (br.X >= pl.X) then
-                                ball_speed.X <= -ball_speed.X;
-                            end if;
-                            if (bl.Y >= pr.Y) and (br.Y <= pl.Y) then
-                                ball_speed.Y <= -ball_speed.Y;
-                            end if;
-                        end if;
                         state          <= SGameState;
+                        sprite_counter := (others => '0');
+                    
+                    
                     when SGameState =>
                         if win_counter >= C_NUM_SPRITES then
                             -- if player wins do some terrible blinking
